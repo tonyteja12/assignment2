@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Earthquake Search</title>
+    <style>
+        /* CSS styles for the page */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        #map {
+            height: 600px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+
+<a href="{{url_for('table')}}">table</a>
+
+
+
+    <div id="map"></div>
+    <form>
+        <input type="text" placeholder="Minimum magnitude" name="min_mag">
+        <input type="text" placeholder="Maximum magnitude" name="max_mag">
+        <input type="text" placeholder="Minimum time (YYYY-MM-DD)" name="min_time">
+        <input type="text" placeholder="Maximum time (YYYY-MM-DD)" name="max_time">
+        <input type="text" placeholder="Latitude" name="latitude">
+        <input type="text" placeholder="Longitude" name="longitude">
+        <input type="text" placeholder="Radius (km)" name="radius">
+        <input type="
+    </form>
+    <form action="/magnitude",method="POST">
+        magnitude:
+        <input type="text" placeholder="Minimum magnitude" name="magnitude",step="0.01">
+        <input type ='submit'>
+        </form>
+
+
+
+    </form>
+
+
+
+</body>
+</html>
